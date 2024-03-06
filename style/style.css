@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+main {
+  height: 100vh;
+  background-color: #f6f9fe;
+  border: 20px solid white;
+  border-radius: 35px;
+}
+
+.header-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2em;
+}
+
+.navbar-logo > a > img {
+  width: 200px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 2em;
+  align-items: center;
+  list-style: none;
+}
+
+.navlink {
+  text-decoration: none;
+  font-size: 1.1em;
+  color: #68696a;
+}
+
+.nav-join-btn {
+  background-color: #372865;
+  color: white;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 20px;
+  border-radius: 5px;
+  font-size: 1.1em;
+}
+
+.home-section {
+  width: 90%;
+  padding: 5em 2em 1em;
+  margin: 0 auto;
+}
+
+.home-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.home-detail-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em;
+}
+
+.learn-more {
+  width: max-content;
+  background-color: #372865;
+  color: rgba(255, 255, 255, 0.69);
+  font-size: 1.2em;
+  padding: 10px 25px;
+  border-radius: 100px;
+}
+
+.learn-more > a {
+  color: rgba(255, 255, 255, 0.69);
+  font-weight: 600;
+}
+
+h1 {
+  margin-top: 10px;
+  font-size: clamp(2em, 4vw, 3.5em);
+  color: #353252;
+}
+
+.home-para {
+  width: 90%;
+  color: #68696a;
+  font-size: 1.1em;
+}
+
+.join-form {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+#email {
+  padding: 20px;
+  width: 350px;
+  border: none;
+  border-radius: 5px;
+}
+
+.home-join-btn {
+  padding: 17px 20px;
+  border-radius: 5px;
+  border: none;
+  font-size: 1.1em;
+  background-color: #372865;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.home-section-img {
+  width: 50%;
+}
+
+.home-section-img > img {
+  width: 70%;
+  margin: 2em;
+}
+
+.footer-section {
+  width: 90%;
+  margin: 0 auto;
+  padding: 3em 2em;
+}
+
+.footer-section > p {
+  margin: 10px;
+  font-weight: 600;
+  font-size: 1.15em;
+  color: #68696a;
+}
+
+.footer-container {
+  margin: 30px 10px;
+  display: flex;
+  gap: 20px;
+}
