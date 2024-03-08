@@ -44,6 +44,15 @@ Header Section
   width: 12rem;
 }
 
+.navbar-brand > a:focus,
+.navlink:focus,
+.join-btn:focus,
+.home-join-btn:focus,
+#email:focus {
+  outline: 2px solid #372865;
+  outline-offset: 2px;
+}
+
 .navigation-list {
   display: flex;
   justify-content: center;
@@ -64,6 +73,14 @@ Header Section
   padding: 18px 20px;
   border-radius: 8px;
   font-weight: 600;
+}
+
+.join-btn:hover {
+  background-color: #353252;
+}
+
+.navbar-collapse {
+  display: none;
 }
 
 /* ---
@@ -107,6 +124,7 @@ h1 {
   font-size: clamp(2.5rem, 4vw, 4rem);
   color: #353252;
   margin: 5px 0px;
+  padding: 5px;
 }
 
 .home-detail-p {
@@ -114,17 +132,19 @@ h1 {
   width: 70%;
   font-size: max(1.1rem, 1rem);
   color: var(--third-color);
+  padding: 5px;
 }
 
 .join-form {
   display: flex;
   align-items: center;
   gap: 12px;
+  padding: 5px;
 }
 
 #email {
   height: 55px;
-  width: 400px;
+  width: max(50%, 300px);
   padding: 15px;
   border: 1px solid rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -148,11 +168,13 @@ h1 {
 
 .home-section-img {
   margin: 10px;
-  width: 42vw;
+  display: flex;
+  justify-content: center;
+  width: 45vw;
 }
 
 .home-section-img > img {
-  width: 100%;
+  width: max(23vw, 380px);
 }
 
 /* ---
@@ -177,4 +199,95 @@ Footer section
   justify-content: flex-start;
   gap: 15px;
   margin: 20px 20px 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .navgiation-bar {
+    width: 100%;
+  }
+
+  .home-section-container {
+    width: 100%;
+  }
+
+  .footer-section {
+    width: 100%;
+  }
+
+  .home-detail-p {
+    width: 90%;
+  }
+
+  .home-section-img {
+    width: 50vw;
+  }
+
+  .home-section-img > img {
+    width: max(23vw, 320px);
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .navbar-collapse {
+    display: inline;
+    margin: 20px;
+  }
+
+  .navigation-list {
+    display: none;
+  }
+
+  .home-detail-container {
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: clamp(3rem, 5vw, 4rem);
+  }
+
+  .home-detail-p {
+    width: 95%;
+    text-align: center;
+  }
+
+  .home-section-img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .header-section {
+    padding: 35px 20px;
+  }
+
+  .brand-logo {
+    width: 150px;
+  }
+
+  .home-section {
+    padding: 0;
+  }
+
+  .learn-more-p {
+    width: auto;
+    text-align: center;
+  }
+
+  .join-form {
+    flex-direction: column;
+  }
+
+  #email {
+    width: 65vw;
+    font-size: 0.9em;
+  }
+
+  .home-join-btn {
+    width: 100%;
+  }
+
+  .footer-container {
+    flex-wrap: wrap;
+  }
 }
